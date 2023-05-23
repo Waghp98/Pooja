@@ -23,7 +23,7 @@ public class HandleFrame {
 		driver.switchTo().frame(frameElement);
 		
 		WebElement password = driver.findElement(By.xpath("i2"));
-		password.sendKeys("manager"); //password textbox
+		password.sendKeys("manager"); //password text book
 		
 		
 		Thread.sleep(2000);

@@ -12,7 +12,7 @@ import com.google.common.collect.Table.Cell;
 public class Flib {
 	public static void  main(String[] args) {
 		
-		public String readExcelData(String excelPath,String sheet,int rowCount,int cellCount)
+		String readExcelData(String excelPath,String sheet,int rowCount,int cellCount)
 		{
 			FileInputStream fis = new FileInputStream(excelPath);
 			Workbook wb = WorkbookFactory.create(fis);
