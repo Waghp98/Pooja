@@ -11,18 +11,20 @@ public class CustomeListner extends BaseTest implements ITestListener
 {
   @Override
 	public void onTestStart(ITestResult result) {
+	  Reporter.log("Test case is start",true);
 		
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
+		Reporter.log("Test case is start succesfully",true);
 		
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
 		String failedMethod = result.getMethod().getMethodName();
-		Reporter.log(failedMethod+" :This the failed Method of Test Case",true);
+		Reporter.log(failedMethod+" :Test case is failed due to :"+failedMethod,true);
 		failedMethod(failedMethod);
 	
 		
@@ -45,11 +47,13 @@ public class CustomeListner extends BaseTest implements ITestListener
 
 	@Override
 	public void onStart(ITestContext context) {
+		Reporter.log("Test case is started",true);
 		
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
+		Reporter.log("Test case is Finished",true);
 	}
 
 
